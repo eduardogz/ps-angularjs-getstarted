@@ -1,0 +1,19 @@
+{
+  "name": "ps-angularjs-getstarted",
+  "version": "1.0.0",
+  "description": "Pluralsight",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ps-angularjs-getstarted"
+  },
+  "author": "Eduardo Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-google": "^0.7.1"
+  }
+}
