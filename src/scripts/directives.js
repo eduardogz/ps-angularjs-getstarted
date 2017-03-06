@@ -20,11 +20,10 @@
         $scope.search = function(username) {
             $http.get("https://api.github.com/users/" + username)
                 .then(onUserComplete, onError);
-
-            $scope.message = "Github Viewer";
-            $scope.username = "angular";
-            $scope.repoSortOrder = "-stargazers_count";
         }
+        $scope.message = "Github Viewer";
+        $scope.username = "angular";
+        $scope.repoSortOrder = "-stargazers_count";
     }
 
     app.controller("MainController", ["$scope", "$http", MainController]);

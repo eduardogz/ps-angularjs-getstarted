@@ -4,7 +4,9 @@
   "description": "Pluralsight",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "light-server -s . -p 7070",
+    "start": "npm run serve"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "eslint": "^3.16.1",
     "eslint-config-defaults": "^9.0.0",
-    "eslint-plugin-promise": "^3.5.0"
+    "eslint-plugin-promise": "^3.5.0",
+    "light-server": "^1.0.0"
   }
 }
