@@ -9,24 +9,18 @@
     <meta name="description" content="ps-angular-getstarted">
     <meta name="author" content="Eduardo Cruz">
     <script src="https://opensource.keycdn.com/angularjs/1.6.2/angular.min.js"></script>
-    <script src="src/scripts/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="src/scripts/app.js"></script>
+    <script src="src/scripts/MainController.js"></script>
+    <script src="src/scripts/UserController.js"></script>
     <script src="src/scripts/github.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
-<body ng-controller="MainController">
-    <h1>{{ message }}</h1>
-    <div>{{ error }}</div>
-    {{countdown}}
-    <form name="searchUser" ng-submit="search(username)">
-        <input type="search" required ng-model="username" />
-        <input type="submit" value="Search" />
-    </form>
-    <div ng-include="'directives_userdetails.html'" ng-show="user"></div>
-
+<body>
+    <h1>GitHub Viewer</h1>
+    <div ng-view></div>
 </body>
-
 </html>

@@ -1,6 +1,6 @@
-<div id="userDetails" ng-show="user">
+<div>
     <h2>{{ user.name }}</h2>
-    <p>{{ user.location }}</p>
+    <p>{{ error }}</p>
     <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="user.name" />
 </div>
 Order:
@@ -25,3 +25,4 @@ Order:
         </tr>
     </tbody>
 </table>
+<a href="#/main"> Back to search</a>
