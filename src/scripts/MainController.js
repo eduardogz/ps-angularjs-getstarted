@@ -2,7 +2,7 @@
 
     var app = angular.module("githubViewer");
 
-    var MainController = function($scope, $http, $interval, $location) {
+    var MainController = function($scope, $interval, $location) {
 
         var decrementCountdown = function() {
             $scope.countdown -= 1;
