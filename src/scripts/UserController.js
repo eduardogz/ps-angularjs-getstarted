@@ -14,7 +14,7 @@
         };
 
         var onError = function(reason) {
-            $scope.error = "Could not fetch data: " + reason;
+            $scope.error = "Could not fetch data: " + reason.statusText;
         };
 
         $scope.username = $routeParams.username;

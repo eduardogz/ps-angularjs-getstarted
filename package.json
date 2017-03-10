@@ -1,8 +1,9 @@
 {
   "name": "ps-angularjs-getstarted",
   "version": "1.0.0",
-  "description": "Pluralsight",
+  "description": "Pluralsight Angular tutorial",
   "main": "index.html",
+  "types": "./lib/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "light-server -s . -p 7070",
@@ -15,6 +16,7 @@
   "author": "Eduardo Cruz",
   "license": "ISC",
   "devDependencies": {
+    "@types/angular": "^1.6.7",
     "eslint": "^3.16.1",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-promise": "^3.5.0",

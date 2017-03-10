@@ -28,6 +28,7 @@
         startCountdown();
     };
 
+    // register controller
     app.controller("MainController", MainController);
 
 })();

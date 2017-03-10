@@ -20,7 +20,7 @@
     <h1>{{ message }}</h1>
     <div>{{ error }}</div>
     <form name="searchUser" ng-submit="search(username)">
-        <input type="search" required ng-model="username" />
+        <input type="search" ng-model="username" required />
         <input type="submit" value="Search" />
     </form>
     <div ng-include="'directives_userdetails.html'" ng-show="user"></div>
